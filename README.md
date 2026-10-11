@@ -7,8 +7,8 @@
 
 ## Prerequisites
 
-Installed packages: git, nvim, bat, fzf
-Folder: `~/.local/bin` created and added to `$PATH`
+- Installed packages: git, nvim, bat, fzf
+- Folder: `~/.local/bin` created and added to `$PATH`
 
 ## Install
 
