@@ -18,11 +18,20 @@ ln -s bang.sh ~/.local/bin/bang
 
 ## Usage
 
-Add new scripts in ./scripts folder
+Scripts
 
-run: `bang` and select the script to run
-run: `bang query` to prefill the search with `query`
+- Add new scripts to `./scripts` folder
+
+Cli
+
+- Run `bang` to select the script to run
+- Run `bang query` to prefill the search
 
 Note:
 
-- if only one script matches the query it will be run directly
+- If only one script matches the query it will be run directly
+
+Shortcuts
+
+- `ctrl+e`: edit script in `nvim` for editing
+- `ctrl+c`: close the launcher
