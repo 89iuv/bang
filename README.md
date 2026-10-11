@@ -33,5 +33,5 @@ Note:
 
 Shortcuts
 
-- `ctrl+e`: edit script in `nvim` for editing
+- `ctrl+e`: open script in `nvim` for editing
 - `ctrl+c`: close the launcher
