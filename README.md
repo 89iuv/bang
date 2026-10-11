@@ -26,7 +26,7 @@ sudo dnf install bat, fzf, nvim
 Create symbolic link to launcher
 
 ```sh
-ln -s bang.sh ~/.local/bin/bang
+ln -sr bang.sh ~/.local/bin/bang
 ```
 
 ## Usage
