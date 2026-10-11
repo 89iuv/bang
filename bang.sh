@@ -1,0 +1,20 @@
+#!/bin/bash
+
+LOCATION="$(dirname -- "$(readlink -f -- "${BASH_SOURCE[0]}")")"
+cd "$LOCATION" || exit
+
+find ./scripts -type f -name "*.sh" \
+  | sort \
+  | awk -F/ '{ print $0 "\t" $NF }' \
+  | fzf \
+    --delimiter '\t' \
+    --with-nth=2 \
+    --accept-nth=1 \
+    --query "$*" \
+    --select-1 \
+    --preview-window right,wrap,border-sharp \
+    --preview 'bat --language=sh --style=plain --color=always {1}' \
+    --bind 'CTRL-e:execute(nvim {1})' \
+    --layout reverse \
+    --border sharp \
+  | xargs -r -o bash
