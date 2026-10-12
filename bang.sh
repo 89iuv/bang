@@ -14,7 +14,7 @@ find ./scripts -type f -name "*.sh" \
     --select-1 \
     --preview-window right,wrap,border-sharp \
     --preview 'bat --language=sh --style=plain --color=always {1}' \
-    --bind 'CTRL-e:execute(nvim {1})' \
+    --bind 'CTRL-e:execute(nvim {1})+refresh-preview' \
     --layout reverse \
     --border sharp \
   | xargs -r -o bash
