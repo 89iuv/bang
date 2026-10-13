@@ -1,9 +1,7 @@
 #!/bin/bash
 
-LOCATION="$(dirname -- "$(readlink -f -- "${BASH_SOURCE[0]}")")"
-cd "$LOCATION" || exit
-
-find ./scripts -type f -name "*.sh" \
+BANG_PATH="$(dirname -- "$(readlink -f -- "${BASH_SOURCE[0]}")")"
+find $BANG_PATH/scripts -type f -name "*.sh" \
   | sort \
   | awk -F/ '{ print $0 "\t" $NF }' \
   | fzf \
