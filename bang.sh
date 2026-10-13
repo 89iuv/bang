@@ -9,10 +9,11 @@ find $BANG_PATH/scripts -type f -name "*.sh" \
     --with-nth=2 \
     --accept-nth=1 \
     --query "$*" \
-    --ghost "Search for script" \
+    --ghost "Type to search..." \
     --select-1 \
     --preview 'bat --language=sh --style=plain --color=always {1}' \
     --preview-window right,wrap,border-sharp,60% \
+    --highlight-line \
     --no-border \
     --layout reverse \
     --bind 'CTRL-e:execute(nvim {1})+refresh-preview' \
