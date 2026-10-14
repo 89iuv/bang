@@ -39,17 +39,17 @@ add_binding="CTRL-a:execute(bash -c 'new_script \"\$1\"' _ {q})+$reload_action+c
 
 list_scripts \
   | fzf \
+    --query "$*" \
+    --select-1 \
     --delimiter '\t' \
     --with-nth=2 \
     --accept-nth=1 \
-    --query "$*" \
     --ghost "Type to search..." \
-    --select-1 \
+    --highlight-line \
     --preview 'bat --language=sh --style=plain --color=always {1}' \
     --preview-window right,wrap,border-sharp,60% \
-    --highlight-line \
-    --no-border \
     --layout reverse \
+    --no-border \
     --bind "$edit_binding" \
     --bind "$delete_binding" \
     --bind "$add_binding" \
