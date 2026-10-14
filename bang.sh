@@ -55,6 +55,4 @@ list_scripts \
     --bind "$edit_binding" \
     --bind "$delete_binding" \
     --bind "$add_binding" \
-  | while IFS= read -r file; do
-      [ -n "$file" ] && bash "$file"
-    done
+  | xargs -r -o -d '\n' bash
