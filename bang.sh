@@ -48,7 +48,7 @@ list_scripts \
     --accept-nth=1 \
     --ghost "Type to search..." \
     --highlight-line \
-    --preview 'bat --language=sh --style=plain --color=always "{1}"' \
+    --preview 'bat --language=sh --style=plain --color=always {1}' \
     --preview-window right,wrap,border-sharp,60% \
     --layout reverse \
     --no-border \
