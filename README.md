@@ -46,5 +46,7 @@ Note:
 
 ### Shortcuts
 
+- `ctrl+a`: create a new script named after the query and edit it in `nvim`
 - `ctrl+e`: edit script in `nvim`
+- `ctrl+x`: delete script (asks for confirmation)
 - `ctrl+c`: close the launcher
