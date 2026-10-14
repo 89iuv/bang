@@ -18,7 +18,7 @@
 Install required packages
 
 ```sh
-sudo dnf install bat, fzf, nvim
+sudo dnf install bat fzf nvim
 ```
 
 ## Install
@@ -47,6 +47,7 @@ Note:
 ### Shortcuts
 
 - `ctrl+a`: create a new script named after the query and edit it in `nvim`
+  (falls back to a timestamped name if the query is empty)
 - `ctrl+e`: edit script in `nvim`
-- `ctrl+x`: delete script (asks for confirmation)
+- `ctrl+d`: delete script (asks for confirmation)
 - `ctrl+c`: close the launcher
